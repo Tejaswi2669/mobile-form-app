@@ -1,0 +1,7 @@
+{
+  "name": "mobile-form-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
