@@ -1,6 +1,6 @@
-
+// src/environments/environment.ts
 
 export const environment = {
-  production: true,
-  apiUrl: 'https://your-production-api.com/api/formdata'
+  production: false,
+  apiUrl: 'http://localhost:1337/api', // Base URL for Strapi APIs
 };

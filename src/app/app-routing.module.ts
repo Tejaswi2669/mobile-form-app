@@ -1,20 +1,23 @@
+// src/app/app-routing.module.ts
+
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'tabs/form', // Redirect to the Form tab by default
     pathMatch: 'full'
   },
   {
-    path: 'form',
-    loadChildren: () => import('./form/form.module').then( m => m.FormPageModule)
+    path: 'tabs',
+    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
+  {
+    path: 'edit-record/:documentId',
+    loadChildren: () => import('./edit-record/edit-record.module').then(m => m.EditRecordPageModule)
+  },
+  // You can add more global routes here if needed
 ];
 
 @NgModule({

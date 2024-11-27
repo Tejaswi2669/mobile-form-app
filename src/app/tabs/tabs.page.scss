@@ -1,0 +1,16 @@
+/* src/app/tabs/tabs.page.scss */
+
+ion-tab-bar {
+    --background: #ffffff; /* Set background color */
+    --border-color: #ccc; /* Set border color */
+    --height: 60px; /* Adjust height if needed */
+  }
+  
+  ion-tab-button {
+    font-size: 14px; /* Adjust font size */
+  }
+  
+  ion-icon {
+    font-size: 24px; /* Adjust icon size */
+  }
+  

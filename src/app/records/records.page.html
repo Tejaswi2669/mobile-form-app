@@ -1,0 +1,35 @@
+<!-- src/app/records/records.page.html -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Records</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let record of records">
+      <ion-label>
+        <h2>{{ record.name }}</h2>
+        <p>Item: {{ record.itemDetails }}</p>
+        <p>Amount Paid: {{ record.amountPaid }}</p>
+        <p>Actual Amount: {{ record.actualAmount }}</p>
+        <p>Phone: {{ record.phoneNumber }}</p>
+        <p>User: {{ record.userName }}</p>
+      </ion-label>
+      <ion-buttons slot="end">
+        <ion-button color="primary" (click)="editRecord(record)">
+          <ion-icon slot="icon-only" name="create-outline"></ion-icon>
+        </ion-button>
+        <ion-button color="danger" (click)="deleteRecord(record)">
+          <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+  </ion-list>
+
+  <!-- Optional: Show a message if no records are present -->
+  <ion-text *ngIf="records.length === 0" class="ion-text-center">
+    <p>No records found.</p>
+  </ion-text>
+</ion-content>
