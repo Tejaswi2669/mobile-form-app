@@ -1,0 +1,67 @@
+// src/app/form/form.page.scss
+
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  ion-item {
+    margin-bottom: 16px;
+  }
+  
+  ion-label {
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  ion-input,
+  ion-textarea {
+    --padding-start: 12px;
+    --padding-end: 12px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    background-color: #e0e0e0;
+    color: black;
+    border-radius: 4px;
+  }
+  
+  ion-textarea {
+    min-height: 80px;
+  }
+  
+  ion-button {
+    margin-top: 16px;
+    --padding-start: 24px;
+    --padding-end: 24px;
+    --padding-top: 12px;
+    --padding-bottom: 12px;
+    --border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 4px;
+    margin-left: 8px;
+  }
+  
+  ion-text {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #888;
+  }
+  
+  
