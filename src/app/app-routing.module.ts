@@ -6,7 +6,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'tabs/form', // Redirect to the Form tab by default
+    redirectTo: 'home', // Redirect to home
     pathMatch: 'full'
   },
   {
@@ -20,6 +20,11 @@ const routes: Routes = [
   {
     path: 'edit-record/:documentId',
     loadChildren: () => import('./edit-record/edit-record.module').then(m => m.EditRecordPageModule)
+  },
+  {
+    path: '**',
+    redirectTo: 'tabs/form', // Redirect to the Form tab by default
+    pathMatch: 'full'
   },
   // You can add more global routes here if needed
 ];
